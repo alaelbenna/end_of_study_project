@@ -1,0 +1,117 @@
+/* Navbar.css */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Use your preferred font */
+}
+
+.navbar {
+  background-color: #333333 !important;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  color:#191919
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  color: #555;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  color: #3498db;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: #F3DEBA  !important;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #3498db;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.login-button {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  color: #2077c6;
+}
+
+/* Styles for the dropdown menu */
+.dropdown-menu {
+  background-color: #191919;
+  border: 1px solid #191919;
+  border-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  color: #555;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Media query for small screens (up to 767px) */
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: column; /* Stack items vertically on small screens */
+    text-align: center; /* Center text in the navbar on small screens */
+  }
+
+  .navbar-toggler {
+    display: block; /* Show the toggler on small screens */
+  }
+
+  .navbar-collapse {
+    display: none; /* Hide the collapse menu by default on small screens */
+  }
+
+  .navbar-collapse.show {
+    display: block; /* Show the collapse menu when toggled on small screens */
+  }
+
+  .nav-item {
+    margin: 0.5rem 0; /* Adjust spacing between items on small screens */
+  }
+}

@@ -1,0 +1,179 @@
+/* Bedroom.css */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lab {
+  font-size: 30px;
+  color: #a32828;
+}
+
+/* Room Container Styles */
+.room-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.room-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.loading-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Primary Button Styles */
+.primary-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.primary-buttons .tooltip {
+  position: relative;
+  margin: 10px;
+}
+
+.primary-buttons button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #3897f0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-buttons button:hover {
+  background-color: #1771e6;
+}
+
+.primary-buttons button:focus {
+  outline: none;
+}
+
+.primary-buttons .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.primary-buttons .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Secondary Button Styles */
+.secondary-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.secondary-buttons .anything {
+  position: relative;
+  margin: 10px;
+}
+
+.secondary-buttons button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #212529;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.secondary-buttons button:hover {
+  background-color: #6b6b6b;
+}
+
+.secondary-buttons button:focus {
+  outline: none;
+}
+
+.secondary-buttons .anythingtext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.secondary-buttons .anything:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,238 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+/* Add your navbar styles here */
+
+/* Header */
+header {
+  background-color: #ffebcd;
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0e0f11;
+}
+
+/* Section */
+section {
+  padding: 70px 0;
+  background-color: #ffebcd;
+}
+
+.card {
+  background-color: #333333;
+  border: 1px solid #707172;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.20s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.06);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card h5 {
+  font-weight: bold;
+  color: #ffebcd;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#after {
+  text-align: center;
+}
+
+.handwriting-font {
+  font-family: 'YourHandwritingFont', cursive; /* Replace 'YourHandwritingFont' with the actual font name */
+}
+
+#element-image-drop {
+  margin-top: 20px;
+}
+
+#upload {
+  display: none;
+}
+
+.uploaded-image {
+  max-width: 100%;
+  max-height: 300px;
+  margin-top: 10px;
+}
+
+#element-image-drop-2 {
+  margin-top: 20px;
+}
+
+#download {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+#generated {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+#loader {
+  margin-top: 10px;
+  display: none; /* Set to 'block' or 'inline-block' if you want to show a loader */
+  /* Add loader styles here */
+}
+/* Footer */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.social-links a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+}
+
+.social-links span {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.joujou{
+  background-color: #ffebcd;
+}
+/* Add your footer styles here */
+.joujouet{
+  text-decoration: underline;
+  color: #ffebcd;
+}
+.jiji h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0e0f11;
+  text-align: center;
+}
+
+
+
+#color-type-div {
+  background-color: #f4f6f9;
+  margin-top: 150px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#color-type-span {
+  font-size: 40px;
+  font-weight:normal ;
+  color: #d9a054; /* Change this color to your preference */
+}
+
+.image-grid-style {
+  display: flex;
+  justify-content: center;
+}
+
+.color-palette {
+  display: grid;
+  grid-template-columns: repeat(14, 50px); /* Adjust the column size as needed */
+  gap: 10px; /* Adjust the gap between color boxes */
+}
+
+.color-box {
+  width: 50px; /* Adjust the width of each color box */
+  height: 50px; /* Adjust the height of each color box */
+  border: 1px solid #070404; /* Border color */
+}
+
+.color-palette .color-box {
+  width: 50px; /* Set a fixed width for each circle */
+  height: 50px; /* Set a fixed height for each circle */
+  border-radius: 50%; /* Ensure each circle has rounded corners */
+}
+
+.color-palette .col-1,
+.color-palette .col-2,
+.color-palette .col-3,
+.color-palette .col-4,
+.color-palette .col-5,
+.color-palette .col-6,
+.color-palette .col-7,
+.color-palette .col-10,
+.color-palette .col-11,
+.color-palette .col-12,
+.color-palette .col-13,
+.color-palette .col-14,
+.color-palette .col-15,
+.color-palette .col-16 {
+  width: 30px; /* Set a fixed width for each circle */
+  height: 30px; /* Set a fixed height for each circle */
+  border-radius: 50%; /* Ensure each circle has rounded corners */
+}
+
+.col-1 { background-color: #ff0000; } /* Replace with your color code */
+.col-2 { background-color: #00ff00; } /* Replace with your color code */
+.col-3 { background-color: #0000ff; } /* Replace with your color code */
+.col-4 { background-color: #ffff00; } /* Replace with your color code */
+.col-5 { background-color: #ff00ff; } /* Replace with your color code */
+.col-7 { background-color: #000000; } /* Replace with your color code */
+.col-10 { background-color: #999999; } /* Replace with your color code */
+.col-11 { background-color: #666666; } /* Replace with your color code */
+.col-12 { background-color: #333333; } /* Replace with your color code */
+.col-13 { background-color: #ff9900; } /* Replace with your color code */
+.col-14 { background-color: #33cc33; } /* Replace with your color code */
+.col-15 { background-color: #3399ff; } /* Replace with your color code */
+.col-16 { background-color: #9933cc; } /* Replace with your color code */
+/* Media Query for Tablets and Smaller Screens */
+@media screen and (max-width: 768px) {
+  .color-palette {
+    grid-template-columns: repeat(8, 50px); /* Adjust the column size for smaller screens */
+  }
+
+  #color-type-span {
+    font-size: 50px; /* Adjust the font size for smaller screens */
+  }
+
+  #text-of-image-container {
+    font-size: 14px; /* Adjust the font size for bottom text on smaller screens */
+  }
+}
