@@ -65,7 +65,7 @@ function Login() {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "https://dashorianna-4edf3677052e.herokuapp.com/api/users/login",
+        "http://localhost:5000/api/users/login",
         {
           username: username,
           password: password,
@@ -105,7 +105,7 @@ function Login() {
     if (validateRegistration()) {
       try {
         const response = await axios.post(
-          "https://dashorianna-4edf3677052e.herokuapp.com/api/users/register",
+          "http://localhost:5000/api/users/register",
           {
             // Replace with actual user input or dynamic data
             username: username,
