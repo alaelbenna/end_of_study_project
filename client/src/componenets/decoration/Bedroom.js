@@ -7,12 +7,12 @@ import bedroom from "../assets/bedroom.PNG";
 import dressingRoom from "../assets/dressingroom.PNG";
 import kitchen from "../assets/kitchen.PNG";
 import livingRoom from "../assets/living room.PNG";
-import bathroom from "../assets/bathroom.PNG"; // New bathroom image
+import bathroom from "../assets/bathroom.PNG"; 
 import modernBedroom from "../assets/modern bedroom.PNG";
 import modernDressingRoom from "../assets/modern dressingroom.PNG";
 import modernKitchen from "../assets/modern kitchen.PNG";
 import santaLivingRoom from "../assets/santa livingroom.PNG";
-import modernBathroom from "../assets/modern bathroom.PNG"; // New modern bathroom image
+import modernBathroom from "../assets/modern bathroom.PNG"; 
 
 function Bedroom() {
   const [selectedRoomType, setSelectedRoomType] = useState(null);
@@ -25,7 +25,7 @@ function Bedroom() {
     dressingroom: dressingRoom,
     kitchen: kitchen,
     livingroom: livingRoom,
-    bathroom: bathroom, // Added bathroom image
+    bathroom: bathroom, 
   };
 
   const modernImages = {
@@ -33,7 +33,7 @@ function Bedroom() {
     dressingroom: modernDressingRoom,
     kitchen: modernKitchen,
     livingroom: santaLivingRoom,
-    bathroom: modernBathroom, // Added modern bathroom image
+    bathroom: modernBathroom, 
   };
 
   const roomDescriptions = {
