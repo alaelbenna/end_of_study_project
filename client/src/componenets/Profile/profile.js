@@ -23,7 +23,7 @@ function Profile() {
     const fetchUserDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/users/users/${userId}`
+          `https://dashorianna-4edf3677052e.herokuapp.com/api/users/users/${userId}`
         );
         setUserDetails(response.data);
       } catch (error) {
@@ -45,7 +45,7 @@ function Profile() {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/users/userss/${userId}`,
+        `https://dashorianna-4edf3677052e.herokuapp.com/api/users/userss/${userId}`,
         userDetails
       );
 
