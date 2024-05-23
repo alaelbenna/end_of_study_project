@@ -1,25 +1,26 @@
 /* Bedroom.css */
 
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
+/* Body Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
 }
 
-
+/* Container Styles */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-
+/* Header Styles */
 .header {
   background-color: #fff;
   padding: 10px;
@@ -31,7 +32,7 @@ body {
   color: #a32828;
 }
 
-
+/* Room Container Styles */
 .room-container {
   position: relative;
   display: flex;
@@ -65,12 +66,12 @@ body {
   border-radius: 5px;
 }
 
-
+/* Primary Button Styles */
 .primary-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px; 
+  margin-top: 20px; /* Adjust margin as needed */
 }
 
 .primary-buttons .tooltip {
@@ -121,12 +122,12 @@ body {
   opacity: 1;
 }
 
-
+/* Secondary Button Styles */
 .secondary-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px; 
+  margin-top: 20px; /* Adjust margin as needed */
 }
 
 .secondary-buttons .anything {

@@ -17,7 +17,7 @@ function ListUsers() {
   useEffect(() => {
     // Use Axios to make the HTTP request
     axios
-      .get("https://dashorianna-4edf3677052e.herokuapp.com/api/users/isAdmin")
+      .get("http://localhost:5000/api/users/isAdmin")
       .then((response) => {
         // Update the registration count in the state
         setisAdmin(true);
@@ -58,7 +58,7 @@ function ListUsers() {
 
     // Fetch user role
     axios
-      .get("https://dashorianna-4edf3677052e.herokuapp.com/api/users/getUserRole", {
+      .get("http://localhost:5000/api/users/getUserRole", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -73,7 +73,7 @@ function ListUsers() {
 
     // Fetch user data from the API
     axios
-      .get("https://dashorianna-4edf3677052e.herokuapp.com/api/users/users")
+      .get("http://localhost:5000/api/users/users")
       .then((response) => {
         setUsers(response.data);
       })
@@ -93,7 +93,7 @@ function ListUsers() {
   useEffect(() => {
     // Fetch user data from the API
     axios
-      .get("https://dashorianna-4edf3677052e.herokuapp.com/api/users/users")
+      .get("http://localhost:5000/api/users/users")
       .then((response) => {
         setUsers(response.data);
         setSearchResults(response.data); // Initialize search results with all users
@@ -184,7 +184,7 @@ function ListUsers() {
         // Continue with the update logic
         axios
           .put(
-            `https://dashorianna-4edf3677052e.herokuapp.com/api/users/users/${editingUser._id}`,
+            `http://localhost:5000/api/users/users/${editingUser._id}`,
             formData
           )
           .then((response) => {
@@ -243,7 +243,7 @@ function ListUsers() {
   const handleDeleteSubmit = (userId) => {
     // Make an API call to delete the user
     axios
-      .delete(`https://dashorianna-4edf3677052e.herokuapp.com/api/users/users/${userId}`)
+      .delete(`http://localhost:5000/api/users/users/${userId}`)
       .then((response) => {
         // Handle successful deletion
         console.log(response.data.message);
@@ -262,7 +262,7 @@ function ListUsers() {
     if (validateRegistration()) {
       try {
         const response = await axios.post(
-          "https://dashorianna-4edf3677052e.herokuapp.com/api/users/register",
+          "http://localhost:5000/api/users/register",
           {
             // Replace with actual user input or dynamic data
             username: username,
@@ -346,7 +346,7 @@ function ListUsers() {
     </tr>
   ));
   //PAGINATION CODE ENDS
-  if (isAdmin !== null && isAdmin === false) {
+  if (isAdmin !== null && isAdmin == false) {
     return "You are not authorized to view this page. Please log in as an admin.";
   }
   if (isAdmin === null) {
