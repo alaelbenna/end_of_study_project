@@ -9,7 +9,7 @@ function Home() {
   useEffect(() => {
     // Use Axios to make the HTTP request
     axios
-      .get("https://dashorianna-4edf3677052e.herokuapp.com/api/users/isAdmin")
+      .get("http://localhost:5000/api/users/isAdmin")
       .then((response) => {
         // Update the registration count in the state
         setisAdmin(true);
@@ -23,7 +23,7 @@ function Home() {
   useEffect(() => {
     // Use Axios to make the HTTP request
     axios
-      .get("https://dashorianna-4edf3677052e.herokuapp.com/api/users/registrations/count")
+      .get("http://localhost:5000/api/users/registrations/count")
       .then((response) => {
         // Update the registration count in the state
         setRegistrationCount(response.data.totalRegistrations);
